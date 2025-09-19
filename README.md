@@ -22,4 +22,4 @@ Each week includes:
 
 ---
 
-Creator: YOUR NAME — follow along on LinkedIn: #DoMoreLearnBetter
+Creator: Aborna Mondal — follow along on LinkedIn: #DoMoreLearnBetter
