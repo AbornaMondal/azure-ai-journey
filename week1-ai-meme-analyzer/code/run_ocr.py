@@ -5,7 +5,10 @@ from config import VISION_ENDPOINT, VISION_KEY
 
 def analyze_image_read_api(image_path):
     post_url = VISION_ENDPOINT.rstrip('/') + "/vision/v3.2/read/analyze"
-    headers = {"Ocp-Apim-Subscription-Key": VISION_KEY, "Content-Type": "application/octet-stream"}
+    headers = { 
+        "Ocp-Apim-Subscription-Key": VISION_KEY,
+        "Content-Type": "application/octet-stream"
+    }
     with open(image_path, "rb") as f:
         data = f.read()
     resp = requests.post(post_url, headers=headers, data=data)
