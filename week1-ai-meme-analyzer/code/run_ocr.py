@@ -56,7 +56,7 @@ def check_content_safety(text):
 
     result = resp.json()
     return result
-
+#Example usage 
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
