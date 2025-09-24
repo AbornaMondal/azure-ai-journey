@@ -8,7 +8,7 @@
 ## Steps to run
 1. Create Azure Vision resource + Content Safety resource and get keys.
 2. Edit `code/config.example.py` with your endpoint & key (rename to `config.py`).
-3. Run the script: `python code/run_ocr.py --image ./assets/meme1.png`
+3. Run the script: `streamlit run meme_app_updated.py`
 4. Screenshot the output and add to `assets/result1.png`.
 
 ## Output
