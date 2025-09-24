@@ -1,26 +1,43 @@
 # Week 1 — AI Meme Analyzer
 
-**Project Name:** AI Meme Analyzer  
-**Services Used:** Azure Computer Vision (OCR), Azure Content Safety (moderation)  
-**Goal:** Extract text from memes and mark whether the meme is safe for sharing.  
-**Architecture:** Image → Vision OCR → Content Safety → UI / Output screenshot
+**Project Name:** Azure AI Meme Analyzer  
+**Services Used:** Azure Vision (OCR), Azure Content Safety (Moderation), Streamlit (UI)  
+**Goal:** Upload memes, extract text, and check whether they are safe for sharing.  
+**Architecture:** Image → Vision OCR → Content Safety (Image + Text) → Streamlit UI
 
-## Steps to run
-1. Create Azure Vision resource + Content Safety resource and get keys.
-2. Edit `code/config.example.py` with your endpoint & key (rename to `config.py`).
-3. Run the script: `python code/run_ocr.py --image ./assets/meme1.png`
-4. Screenshot the output and add to `assets/result1.png`.
+## Steps to Run
+1. **Create Azure resources**  
+   - Vision resource (for OCR)  
+   - Content Safety resource (for moderation)  
+   - Get their **endpoint** and **key** values.
 
+2. **Add configuration**  
+   - Copy `config.example.py` → rename to `config.py`.  
+   - Add your Vision & Content Safety keys and endpoints.  
+
+3. **Install dependencies**
+   - pip install -r requirements.txt
+
+4. **Run the app**
+   - streamlit run app.py  
+
+5. **Upload a meme**  
+   - Choose an image from your system (`png`, `jpg`, `jpeg`).  
+   - The app will:  
+     - Extract text (OCR)  
+     - Check safety for both **image** and **text**  
+     - Display results in tables  
+---
 ## Output
-- Extracted text string(s)
-- Safety verdict (Safe / Unsafe)
-- Sample screenshot in `assets/`
-
-## What we learned
-- OCR handles noisy fonts fairly well.
-- Content filtering is essential if you publish user content.
-- Quick integration with minimal code.
-
-## Next steps
-- Add Custom Vision to classify meme categories.
-- Build a small UI to upload memes live.
+- **Extracted text string(s)** (from OCR)  
+- **Image Safety verdict** (categories + severity)  
+- **Text Safety verdict** (categories + severity)  
+- Optional: Add a screenshot of the app UI inside `assets/`
+---
+## What We Learned
+- OCR extracts meme text surprisingly well, even with noisy fonts.  
+- Content moderation is crucial when handling **user-generated content**.  
+- Streamlit + Azure AI makes it possible to build a working AI app with minimal code.  
+---
+👤 **Created by:** Aborna Mondal  
+📌 Shared as part of my **LinkedIn AI Learning Journey**

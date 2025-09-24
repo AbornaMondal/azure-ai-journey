@@ -8,7 +8,7 @@ from azure.ai.contentsafety.models import (
     AnalyzeImageOptions, ImageData,
     AnalyzeTextOptions
 )
-from azure.core.credentials import AzureKeyCredential
+from c import AzureKeyCredential
 from config import VISION_ENDPOINT, VISION_KEY, SAFETY_ENDPOINT, SAFETY_KEY\
 
 

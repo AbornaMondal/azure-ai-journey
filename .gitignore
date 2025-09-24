@@ -17,3 +17,11 @@ dist/
 # Secrets
 week1-ai-meme-analyzer/code/config.py
 week2-sentiment-translator/code/config.py
+
+# Ignore personal notes file
+notes.md
+NOTES.md
+
+# Ignore all Word documents
+*.doc
+*.docx

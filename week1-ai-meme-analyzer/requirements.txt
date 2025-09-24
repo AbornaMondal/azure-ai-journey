@@ -1,0 +1,6 @@
+streamlit
+pandas
+azure-ai-vision-imageanalysis
+azure-ai-contentsafety
+#azure.ai.contentsafety.models
+azure.ai.contentsafety.models
