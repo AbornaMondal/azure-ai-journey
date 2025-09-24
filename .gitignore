@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+.env.local
+
+# Common
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets
+week1-ai-meme-analyzer/code/config.py
+week2-sentiment-translator/code/config.py
