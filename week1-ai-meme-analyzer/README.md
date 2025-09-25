@@ -40,4 +40,4 @@
 - Streamlit + Azure AI makes it possible to build a working AI app with minimal code.  
 ---
 👤 **Created by:** Aborna Mondal  
-📌 Shared as part of my **LinkedIn AI Learning Journey**
+📌 Shared as part of my **Azure AI Learning Journey**
